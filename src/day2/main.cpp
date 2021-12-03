@@ -27,7 +27,7 @@ void p1(vector<pair<string, int>>& input) {
         else d -= i.second;
     }
 
-    cout << "P1:" << x*d << "\n";
+    cout << "P1: " << x*d << "\n";
 }
 
 void p2(vector<pair<string, int>>& input) {
@@ -40,11 +40,11 @@ void p2(vector<pair<string, int>>& input) {
         else a -= i.second;
     }
 
-    cout << "P2:" << x*d << "\n";
+    cout << "P2: " << x*d << "\n";
 }
 
-int main() {
-    vector<pair<string, int>> data = parse(ifstream("src/day2/input.txt"));
+int main(int argc, char **argv) {
+    vector<pair<string, int>> data = parse(ifstream(argv[1]));
     p1(data);
     p2(data);
 

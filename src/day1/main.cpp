@@ -33,8 +33,8 @@ void p2(vector<int>& data) {
     cout << "P2: " << cnt << "\n";
 }
 
-int main() {
-    vector<int> data = parse(ifstream("src/day1/input.txt"));
+int main(int argc, char **argv) {
+    vector<int> data = parse(ifstream(argv[1]));
     p1(data);
     p2(data);
 

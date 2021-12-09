@@ -57,11 +57,9 @@ void p2(vector<int>& data) {
     int min = 1000000000, max = 0, t;
     for(auto d : data) if(d > max) max = d;
 
-    cout << max << "\n";
     for(int i = 0; i <= max; ++i) {
         t = calculateFuelCompound(data, i);
         if(t < min) {
-            cout << "i: " << i << ", min: " << min << "\n";
            min = t;
         }
     }
